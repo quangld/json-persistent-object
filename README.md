@@ -1,5 +1,5 @@
 # json-persistent-object
-A object that is based on a json file and is written back if any changes made to it.
+An object that is based on a json file and is written back if any changes made to it.
 Its value stays consist even if the app is reloaded.
 
 
