@@ -11,14 +11,14 @@ var config = new JSONPO('config.json');
 //add name if it doesn't exist
 if (!config.name) config.name = 'testing';
 
-//every times the app is restarted, this config.count will be increased by 1
+//every time the app is restarted, this config.count will be increased by 1
 config.count = config.count? config.count+1 : 0;
 
 if (!config.controller) {
   //initialize default configuration
   config.controller = { timeout: 1, pinMaps: [10, 13] };
 }
-
+//...
 //later in your code, these changes below will be immediately written back to config.json file
 config.controller.pinMaps[1]=12;
 config.controller.pinMaps.push(13);
