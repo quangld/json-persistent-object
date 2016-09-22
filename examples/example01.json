@@ -1,0 +1,19 @@
+{
+  "a": 4,
+  "b": "B",
+  "int": 13,
+  "str": "String",
+  "arr": [
+    1,
+    2,
+    3,
+    {
+      "child": true,
+      "int": 3
+    },
+    {
+      "child": true,
+      "int": 6
+    }
+  ]
+}

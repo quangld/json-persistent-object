@@ -1,0 +1,19 @@
+{
+  "name": "json-persistent-object",
+  "version": "1.0.0",
+  "description": "object that wil be written to a json file as soon as its properties changed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "persistent",
+    "object",
+    "variables",
+    "json",
+    "config",
+    "file"
+  ],
+  "author": "Quang Le",
+  "license": "ISC"
+}
