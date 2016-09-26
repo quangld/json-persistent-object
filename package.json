@@ -4,7 +4,7 @@
   "description": "object that wil be written to a json file as soon as its properties changed",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "keywords": [
     "persistent",
@@ -15,5 +15,9 @@
     "file"
   ],
   "author": "Quang Le",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quangld/json-persistent-object.git"
+  }
 }
