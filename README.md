@@ -3,10 +3,13 @@ An object that is based on a json file and is written back if any changes made t
 Its value stays consist even if the app is reloaded.
 
 
-
 ```js
 var JSONPO = require('json-persistent-object')
+
+//create an object with data from config.json file
 var config = new JSONPO('config.json');
+
+//From now any update to "config" will be written back to the "config.json" immediately 
 
 //add name if it doesn't exist
 if (!config.name) config.name = 'testing';
