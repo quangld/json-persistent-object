@@ -1,6 +1,6 @@
 {
   "name": "json-persistent-object",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "object that will be written to a json file as soon as its properties changed",
   "main": "index.js",
   "scripts": {
