@@ -33,7 +33,14 @@ var JSONPO = function (data, parent) {
     try {
       fs.accessSync(filename, fs.constants.F_OK | fs.constants.R_OK | fs.constants.W_OK)
       // readFileSync is recommended, since we only need to read json file once
-      data = JSON.parse(fs.readFileSync(filename), dateParser)
+      var content = fs.readFileSync(filename)
+      data = {}
+      if (content.length > 0 && content[0] === '{') {
+        try {
+          data = JSON.parse(content, dateParser)
+        } catch (err) {
+        }
+      }
     } catch (err) {
       switch (err.code) {
         case 'ENOENT': // if file is not exist
