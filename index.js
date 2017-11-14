@@ -33,7 +33,7 @@ var JSONPO = function (data, parent) {
     try {
       fs.accessSync(filename, fs.constants.F_OK | fs.constants.R_OK | fs.constants.W_OK)
       // readFileSync is recommended, since we only need to read json file once
-      var content = fs.readFileSync(filename)
+      var content = fs.readFileSync(filename, 'utf-8')
       data = {}
       if (content.length > 0 && content[0] === '{') {
         try {
